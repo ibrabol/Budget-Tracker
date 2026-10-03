@@ -1,0 +1,172 @@
+```css
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #176b50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #176b50;
+}
+
+/* Form styling */
+.add-expense-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Direct child selector */
+.add-expense-section form > input,
+.add-expense-section form > select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Negation pseudo-class */
+input:not([type="button"]) {
+    background-color: #fff;
+}
+
+/* Focus pseudo-class */
+input:focus,
+select:focus {
+    outline: 2px solid #176b50;
+    border-color: #176b50;
+}
+
+/* Button styling */
+button {
+    background-color: #176b50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover effect on button */
+button:hover {
+    background-color: #104b38;
+}
+
+/* Expense table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Descendant selector */
+.expenses-section th,
+.expenses-section td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table header */
+.expenses-section th {
+    background-color: #176b50;
+    color: white;
+}
+
+/* Position-based pseudo-class */
+.expenses-section tbody tr:nth-child(even) {
+    background-color: #eaf4ef;
+}
+
+/* Hover effect on table rows */
+.expenses-section tbody tr:hover {
+    background-color: #cce8d8;
+    cursor: pointer;
+}
+
+/* Interactive details */
+details {
+    padding: 10px;
+    background-color: #eaf4ef;
+    border-radius: 5px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #176b50;
+}
+
+/* Multimedia */
+.multimedia iframe {
+    width: 100%;
+    max-width: 560px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #176b50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .expenses-section th,
+    .expenses-section td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+```

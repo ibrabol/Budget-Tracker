@@ -1,0 +1,116 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Budget Tracker</h1>
+        <p>Manage your daily expenses</p>
+    </header>
+
+    <main>
+        <section class="expense-form">
+            <h2>Add New Expense</h2>
+
+            <form>
+                <label for="expenseName">Expense Name:</label>
+                <input type="text" id="expenseName"
+                       placeholder="Enter expense name" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount"
+                       placeholder="Enter amount" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <section class="expenses">
+            <h2>Expense List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>KSh 250</td>
+                        <td>Food</td>
+                        <td>2026-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>Bus Fare</td>
+                        <td>KSh 100</td>
+                        <td>Transport</td>
+                        <td>2026-10-02</td>
+                    </tr>
+                    <tr>
+                        <td>House Rent</td>
+                        <td>KSh 5,000</td>
+                        <td>Rent</td>
+                        <td>2026-10-03</td>
+                    </tr>
+                    <tr>
+                        <td>Movie</td>
+                        <td>KSh 500</td>
+                        <td>Entertainment</td>
+                        <td>2026-10-03</td>
+                    </tr>
+                    <tr>
+                        <td>Notebook</td>
+                        <td>KSh 150</td>
+                        <td>Other</td>
+                        <td>2026-10-03</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="multimedia">
+            <h2>Budgeting Tips</h2>
+            <img src="https://placehold.co/600x300?text=Budget+Planning"
+                 alt="Illustration representing budget planning">
+
+            <h3>Learn About Budgeting</h3>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Budgeting tips video"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Budget Tracker</p>
+    </footer>
+
+</body>
+</html>
+```
