@@ -13,7 +13,7 @@ body {
 }
 
 /* Header */
-header {
+header {l
     background-color: #176b50;
     color: white;
     text-align: center;
@@ -170,3 +170,177 @@ footer {
     }
 }
 ```
+
+
+
+
+/* General page styling */
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+padding: 20px;
+font-family: 'Roboto', sans-serif;
+background-color: #F8FAFC;
+color: #1E293B;
+line-height: 1.6;
+}
+
+/* Main heading */
+h1 {
+font-family: 'Poppins', sans-serif;
+color: #14532D;
+text-align: center;
+font-size: 32px;
+margin-bottom: 25px;
+}
+
+/* Section headings */
+h2, h3 {
+font-family: 'Poppins', sans-serif;
+color: #166534;
+margin-bottom: 15px;
+}
+
+/* Main container */
+.container {
+max-width: 1100px;
+margin: 0 auto;
+padding: 25px;
+background-color: #FFFFFF;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Sections */
+section {
+background-color: #FFFFFF;
+margin-bottom: 25px;
+padding: 20px;
+border: 1px solid #E2E8F0;
+border-radius: 10px;
+}
+
+/* Form styling */
+form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+label {
+font-weight: 500;
+color: #334155;
+}
+
+input, select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #CBD5E1;
+border-radius: 7px;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+background-color: #FFFFFF;
+color: #1E293B;
+}
+
+input:focus, select:focus, textarea:focus {
+outline: 2px solid #16A34A;
+border-color: #16A34A;
+}
+
+/* Buttons */
+button {
+padding: 12px 20px;
+background-color: #16A34A;
+color: #FFFFFF;
+font-family: 'Poppins', sans-serif;
+font-size: 15px;
+font-weight: 600;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #14532D;
+}
+
+/* Expense table */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background-color: #FFFFFF;
+}
+
+thead {
+background-color: #166534;
+color: #FFFFFF;
+}
+
+th, td {
+padding: 14px;
+text-align: left;
+border: 1px solid #E2E8F0;
+}
+
+th {
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+background-color: #DCFCE7;
+}
+
+tbody tr:nth-child(odd) {
+background-color: #FFFFFF;
+}
+
+tbody tr:hover {
+background-color: #F0FDF4;
+}
+
+/* Summary cards, if already present */
+.summary {
+background-color: #DCFCE7;
+padding: 20px;
+margin-bottom: 20px;
+border-left: 5px solid #16A34A;
+border-radius: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+body {
+padding: 10px;
+}
+
+```
+.container {
+    padding: 15px;
+}
+
+section {
+    padding: 12px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+table {
+    font-size: 13px;
+}
+
+th, td {
+    padding: 8px;
+}
+```
+
+}
